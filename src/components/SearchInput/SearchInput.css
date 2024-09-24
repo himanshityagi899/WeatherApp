@@ -1,0 +1,90 @@
+/* SearchInput.css */
+/* Search Input Styles */
+/* Search Input Styles */
+.search-input {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+
+  }
+  
+  .search-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+  
+  .dropdown-modal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000; /* Make sure it's on top of other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+/* Dropdown Item Styles */
+.dropdown-item {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+.dropdown-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Light grey hover effect */
+}
+
+/* Debugging Style for Empty Dropdown */
+.dropdown-modal:empty::after {
+    content: "No cities found";
+    color: red;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    text-align: center; /* Center text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-input {
+        margin: 10px auto; /* Reduced margin */
+    }
+
+    .search-input input {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        width: 100%; /* Full width on extra small screens */
+    }
+
+    .search-input input {
+        font-size: 12px; /* Smaller font for mobile */
+    }
+}
+
+
+/* SearchInput.css */
+
+  
+ 
+ 

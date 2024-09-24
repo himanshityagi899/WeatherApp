@@ -1,0 +1,29 @@
+/* WeatherIcon.css */
+.weather-icon {
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .weather-icon img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .weather-icon p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
